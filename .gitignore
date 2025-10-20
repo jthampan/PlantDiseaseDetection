@@ -91,6 +91,7 @@ dmypy.json
 data/plant_diseases/train/
 data/plant_diseases/validation/
 data/plant_diseases/test/
+data/processed_data/
 data/processed_data.npz
 *.npz
 
