@@ -1,6 +1,41 @@
 # Quick Usage Guide
 
-## 🚀 Getting Started in 3 Steps
+## � Prerequisites & Installation
+
+### Prerequisites
+- Python 3.8 or higher
+- Git (for cloning the repository)
+- At least 4GB of free disk space for the dataset
+
+### Installation Steps
+
+#### 1. Clone the Repository
+```bash
+git clone https://github.com/jthampan/PlantDiseaseDetection.git
+cd PlantDiseaseDetection
+```
+
+#### 2. Create Virtual Environment (Recommended)
+```bash
+# Create virtual environment
+python -m venv plant_disease_env
+
+# Activate virtual environment
+# On Windows:
+plant_disease_env\Scripts\activate
+# On macOS/Linux:
+source plant_disease_env/bin/activate
+```
+
+#### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+#### 4. Download Dataset
+Follow the instructions in `DATASET_SETUP.md` to download and set up the PlantVillage dataset.
+
+## �🚀 Getting Started in 3 Steps
 
 ### Step 1: Check Everything is Working
 ```bash

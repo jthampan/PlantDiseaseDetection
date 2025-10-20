@@ -1,5 +1,13 @@
 # Dataset Setup Guide
 
+## Prerequisites
+
+Before setting up the dataset, ensure you have:
+- Python 3.8 or higher installed
+- All required dependencies installed: `pip install -r requirements.txt`
+- At least 4GB of free disk space
+- Stable internet connection for dataset download
+
 ## Overview
 The PlantVillage dataset is not included in this repository due to size constraints (2.27 GB). Follow these steps to set up the dataset locally.
 

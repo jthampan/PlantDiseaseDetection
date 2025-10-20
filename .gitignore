@@ -104,7 +104,6 @@ models/*.h5
 # Output files
 outputs/logs/
 outputs/models/
-outputs/plots/
 
 # Temporary files
 *.tmp
