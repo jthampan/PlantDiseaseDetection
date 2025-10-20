@@ -34,8 +34,22 @@ data/
 │   └── test/
 │       └── test/ (66 test images)
 └── processed_data/
-    └── processed_data.npz (included in repo)
+    └── processed_data.npz (will be generated)
 ```
+
+## Processed Data Generation
+
+The `processed_data.npz` file (917 MB) is not included in the repository due to GitHub's 100 MB file size limit. This file will be automatically generated when you first run the data processing script:
+
+```bash
+python scripts/data_processing/process_plantvillage_dataset.py
+```
+
+This file contains:
+- Pre-processed training data (X_train, y_train)
+- Pre-processed validation data (X_val, y_val) 
+- Class mappings and labels
+- Normalized image arrays ready for training
 
 ## Model Files
 
@@ -62,6 +76,7 @@ python main.py
 - Training images: ~2.1 GB (70,295 images)
 - Validation images: ~150 MB (17,572 images)
 - Test images: ~8 MB (66 images)
+- Processed data file: ~917 MB (generated automatically)
 - Trained model: ~80 MB
 
 ## Alternative: Cloud Storage
