@@ -111,7 +111,8 @@ python scripts/training/colab_train_model.py
 ```
 Final_plantDisease_Project/
 ├── data/
-│   └── plant_diseases/          # Dataset (train/validation/test)
+│   ├── plant_diseases/          # Dataset (train/validation/test)
+│   └── processed_data/          # Pre-processed features (8.9 GB)
 ├── scripts/
 │   ├── data_processing/         # Data preprocessing scripts
 │   ├── training/               # Model training scripts
@@ -121,9 +122,40 @@ Final_plantDisease_Project/
 │   └── class_mapping.json     # Class label mappings
 ├── docs/                      # Documentation
 ├── outputs/                   # Generated outputs
+├── create_data_package.py     # Google Drive package creator
+├── GOOGLE_DRIVE_GUIDE.md     # Cloud storage guide
 ├── main.py                   # Main runner script
 └── requirements.txt          # Dependencies
 ```
+
+## ☁️ Cloud Storage & Collaboration
+
+### Google Drive Integration
+The project includes comprehensive Google Drive integration for easy sharing and cloud training:
+
+**📦 Available Package Types:**
+- **Models Only**: 65.6 MB (quick sharing)
+- **Dataset Only**: 1.3 GB (image data)
+- **Processed Data**: 8.9 GB (pre-computed features)
+- **Complete Package**: 10.3 GB (everything)
+
+**✅ Current Status:**
+- Complete package uploaded to Google Drive: `plant_disease_complete_20251021_084958.zip`
+- Ready for Google Colab training and team collaboration
+
+**🚀 Create New Packages:**
+```bash
+# Quick model sharing (65 MB)
+python create_data_package.py --type models
+
+# Dataset for retraining (1.3 GB) 
+python create_data_package.py --type dataset
+
+# Complete backup (10.3 GB)
+python create_data_package.py --type complete
+```
+
+For detailed instructions, see [`GOOGLE_DRIVE_GUIDE.md`](GOOGLE_DRIVE_GUIDE.md)
 
 ## 🔧 Main Features
 
@@ -208,10 +240,26 @@ See `requirements.txt` for complete dependency list. Key requirements:
 - **CPU fallback**: Automatic fallback for systems without GPU
 
 ## 📖 Documentation
-Detailed documentation available in `docs/`:
-- `scripts_documentation.md` - Overview of all scripts
-- `data_processing_guide.md` - Data processing details
-- `prediction_guide.md` - Prediction and inference guide
+Comprehensive documentation available:
+
+**📋 Core Documentation:**
+- [`README.md`](README.md) - Main project overview and setup
+- [`QUICK_START.md`](QUICK_START.md) - Fast setup guide
+- [`requirements.txt`](requirements.txt) - Python dependencies
+
+**📚 Detailed Guides:**
+- [`docs/scripts_documentation.md`](docs/scripts_documentation.md) - Overview of all scripts
+- [`docs/data_processing_guide.md`](docs/data_processing_guide.md) - Data processing details  
+- [`docs/prediction_guide.md`](docs/prediction_guide.md) - Prediction and inference guide
+
+**☁️ Cloud Integration:**
+- [`GOOGLE_DRIVE_GUIDE.md`](GOOGLE_DRIVE_GUIDE.md) - Google Drive upload and Colab integration
+- [`COLAB_SETUP_GUIDE.md`](COLAB_SETUP_GUIDE.md) - Google Colab training setup
+- [`COLAB_PACKAGE_README.md`](COLAB_PACKAGE_README.md) - Colab package creation guide
+
+**✅ Current Status:**
+- Complete dataset uploaded to Google Drive (10.3 GB)
+- Ready for cloud training and collaboration
 
 ## 🤝 Contributing
 1. Fork the repository
