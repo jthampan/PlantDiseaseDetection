@@ -105,7 +105,8 @@ Your model is ready for production use with:
 
 ### **Run Comprehensive Test Again:**
 ```bash
-python run_quick_test.py
+python main.py
+# Select option 5: "📈 Test Model Accuracy" → "1. Quick accuracy test"
 ```
 
 ### **Interactive Testing:**

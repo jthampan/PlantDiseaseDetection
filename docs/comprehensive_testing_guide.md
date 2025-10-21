@@ -64,7 +64,8 @@ Then select option 3: "📈 Comprehensive test with plots"
 
 ### Option 2: Test Script
 ```bash
-python test_comprehensive.py
+python main.py
+# Select option 6: "📋 Comprehensive Test with Plots"
 ```
 
 ### Option 3: Main Menu

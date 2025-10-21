@@ -107,7 +107,8 @@ The model can identify **38 different conditions** across **14 plant types**:
 For detailed analysis of your model's performance, use the comprehensive testing feature:
 
 ```bash
-python test_comprehensive.py
+python main.py
+# Then select option 6: "📋 Comprehensive Test with Plots"
 ```
 
 This will:
@@ -191,7 +192,7 @@ python main.py --mode check
 python main.py --mode predict --image "data/plant_diseases/test/Apple___Apple_scab/image_001.jpg"
 
 # 3. Run comprehensive accuracy test with plots
-python test_comprehensive.py
+python main.py  # Select option 6: Comprehensive Test with Plots
 
 # 4. Use interactive mode for multiple predictions
 python main.py
